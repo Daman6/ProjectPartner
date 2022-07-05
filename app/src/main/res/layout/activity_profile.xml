@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectimagebackground"
+    tools:context=".ProfileActivity">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/noUserImg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/user"
+        android:visibility="gone">
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No More Users !!"
+        android:layout_below="@+id/noUserImg"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:fontFamily="monospace"
+        android:textSize="35sp"
+        android:visibility="gone"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview"
+        app:cardBackgroundColor="#8543D8"
+        android:layout_margin="8sp"
+        android:padding="5sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_login_24"
+        android:textSize="10sp"
+        android:elevation="10dp"
+        android:textColor="@color/purple_700"
+        android:layout_margin="4sp"
+        android:layout_weight="1"
+        android:text="LOGOUT">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/logoutBtn"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_settings_24"
+        android:textSize="10sp"
+        android:elevation="10dp"
+        android:textColor="@color/purple_700"
+        android:layout_margin="4sp"
+        android:layout_weight="1"
+        android:text="Setting">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/matchesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/settingBtn"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_supervised_user_circle_24"
+        android:textSize="10sp"
+        android:elevation="10dp"
+        android:textColor="@color/purple_700"
+        android:layout_margin="4sp"
+        android:layout_weight="1"
+        android:text="Matches">
+    </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/usercards"></include>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <com.lorentzos.flingswipe.SwipeFlingAdapterView
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line1"
+        android:layout_below="@+id/cardview"
+        android:padding="2dp"
+        android:visibility="gone"
+        app:rotation_degrees="15.0"></com.lorentzos.flingswipe.SwipeFlingAdapterView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/line1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dislikeBtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_baseline_clear_24"
+            android:layout_marginEnd="40dp"
+            android:text="Dislike">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/likeBtn"
+            android:backgroundTint="@color/white"
+            android:layout_width="100dp"
+            android:layout_marginStart="40dp"
+            android:elevation="10dp"
+            app:fabSize="normal"
+            android:src="@drawable/ic_round_check_24"
+            android:layout_height="wrap_content"
+            android:text="like">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </LinearLayout>
+</RelativeLayout>

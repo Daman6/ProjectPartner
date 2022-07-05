@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TellUsMoreActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="Tell Us More About \nYourself 👋"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:text="This information will be seen by others!!"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:outlineProvider="background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/black"
+        android:hint="Your Course"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="40dp"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:id="@+id/at1"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/autoComplete"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:outlineProvider="background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/black"
+        android:hint="Your College Name"
+        android:layout_below="@+id/at1"
+        android:id="@+id/at2"
+        android:elevation="10dp"
+
+        android:layout_marginTop="10dp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/autoCompleteCollege"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:outlineProvider="background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/black"
+        android:hint="Current Graduation Year"
+        android:layout_below="@+id/at2"
+        android:id="@+id/at3"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/autoCompleteYear"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:outlineProvider="background"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        android:textColorHint="@color/black"
+        android:hint="Your State"
+        android:layout_below="@+id/at3"
+        android:id="@+id/at4"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/autoCompleteState"
+            ></AutoCompleteTextView>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:layout_below="@+id/at4"
+        android:text="On Which Level You Consider Yourself In Your Skill ?"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:padding="7sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/userLevel"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:singleSelection="true">
+
+        <Button
+            android:id="@+id/rookiebtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Rookie"
+            android:textColor="@color/purple_700"
+            android:textSize="13sp"></Button>
+
+        <Button
+            android:id="@+id/mediumbtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/androidbtn"
+            android:padding="6dp"
+            android:text="Medium"
+            android:textColor="@color/purple_700"
+            android:textSize="13sp"></Button>
+
+        <Button
+            android:id="@+id/probtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Pro"
+            android:textColor="@color/purple_700"
+            android:textSize="13sp"></Button>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="Continue"
+        android:textAllCaps="true"
+        android:textColor="#9F51F8"
+        android:textSize="16sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

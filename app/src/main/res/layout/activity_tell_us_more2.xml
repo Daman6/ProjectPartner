@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".TellUsMoreActivity2">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="I am a 👽"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:text="On this basis we will show \nyou other users profile"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleGrp"
+        app:singleSelection="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/androidbtn"
+        android:padding="6dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/purple_700"
+        android:text="ANDROID developer">
+    </Button>
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/webbtn"
+        android:layout_below="@+id/androidbtn"
+        android:padding="6dp"
+        android:textSize="13sp"
+        android:textColor="@color/purple_700"
+        android:text="Web developer">
+    </Button>
+
+    <Button
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/reactbtn"
+        android:padding="6dp"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"
+        android:textColor="@color/purple_700"
+        android:text="REact developer">
+    </Button>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="Continue"
+        android:textAllCaps="true"
+        android:textColor="#9F51F8"
+        android:textSize="16sp"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

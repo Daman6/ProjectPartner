@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text="YOUR RATING MATTERS"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textSize="20sp">
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/radiogrp"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:padding="20sp"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="40dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent 😍"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/excellentBtn">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Very Good ♥️"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/verygoodBtn">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good 😀"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/goodBtn">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satisfactory 👍"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:id="@+id/satisfactoryBtn">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Poor 👎"
+            android:textSize="20sp"
+            android:id="@+id/poorBtn">
+        </RadioButton>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogrp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="Submit"
+        android:textAllCaps="true"
+        android:textColor="#9F51F8"
+        android:textSize="16sp">
+    </androidx.appcompat.widget.AppCompatButton>
+</RelativeLayout>

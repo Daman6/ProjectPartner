@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectpartner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectPartner">
+        <activity
+            android:name=".BigProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserBioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RuleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chats.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TellUsMoreActivity3"
+            android:exported="false" />
+
+
+        <activity
+            android:name=".TellUsMoreActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".TellUsMoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterationProcessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="Profile" />
+        <activity
+            android:name=".ui.UserActivity"
+            android:exported="false"
+            android:label="User" />
+        <activity
+            android:name=".ui.Repositories"
+            android:exported="false"
+            android:label="repo" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="HOME" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

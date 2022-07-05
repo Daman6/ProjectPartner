@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectimagebackground"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".SettingActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="30dp">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/namelayout"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:hint="Name"
+        app:boxBackgroundColor="#F0F0F0"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameeditlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/collegeNamelayout"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:hint="College Name"
+        app:boxBackgroundColor="#F0F0F0"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/collegeNameeditlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/courseNamelayout"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:hint="College Course"
+        app:boxBackgroundColor="#F0F0F0"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/courseNameeditlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/collegeYearlayout"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/userProfile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:hint="College Year"
+        app:boxBackgroundColor="#F0F0F0"
+        app:boxCornerRadiusBottomEnd="4dp"
+        app:boxCornerRadiusBottomStart="4dp"
+        app:boxCornerRadiusTopEnd="4dp"
+        app:boxCornerRadiusTopStart="4dp"
+        app:endIconMode="clear_text"
+        android:textColorHint="@color/black"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/collegeYeareditlayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="Update"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="16sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

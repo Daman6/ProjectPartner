@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".registerfragments.FragmentTwo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About \nmyself 😃"
+            android:fontFamily="monospace"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"/>
+
+        <EditText
+            android:background="@drawable/outlinebackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/phoneNoEt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/purple_700"
+            android:hint="Phone No."
+            android:inputType="number"
+            android:maxLength="10"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:textColorHint="#9A9898">
+        </EditText>
+
+        <EditText
+            android:background="@drawable/outlinebackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/bdayEt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/purple_700"
+            android:hint="Bday Date"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#9A9898"
+            android:drawableEnd="@drawable/ic_baseline_cake_24">
+        </EditText>
+
+        <EditText
+            android:background="@drawable/outlinebackground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/bioEt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/purple_700"
+            android:hint="Bio"
+            android:maxLines="11"
+            android:lines="4"
+            android:maxLength="100"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#9A9898">
+        </EditText>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/AlreadyAccBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="Continue"
+        android:textAllCaps="true"
+        android:textColor="#9F51F8"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        >
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</FrameLayout>

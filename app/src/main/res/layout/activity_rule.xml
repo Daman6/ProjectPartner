@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".RuleActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="120dp"
+        android:background="@drawable/logo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:layout_below="@+id/logo"
+        android:text="Welcome to ProjectPartner."
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:layout_below="@+id/text1"
+        android:text="Please follow these House Rules."
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/text2"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_round_check_24">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Be yourself."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text3"
+        android:layout_below="@+id/linear1"
+        android:text="Make sure your photos,age,and bio are true\nto who you are."
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/linear1"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_round_check_24">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Stay safe."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text4"
+        android:layout_below="@+id/linear2"
+        android:text="Don't be too quick to give out personal\ninformation."
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear3"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/linear2"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_round_check_24">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Play it cool."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text5"
+        android:layout_below="@+id/linear3"
+        android:text="Respect others and treat them as you would\nlike to be treated."
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear4"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/linear3"
+        android:layout_marginStart="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_round_check_24">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Be proactive"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="monospace">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text6"
+        android:layout_below="@+id/linear4"
+        android:text="Always report bad behavior."
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp">
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtn"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/outlinebackground"
+        android:elevation="5dp"
+        android:shadowRadius="3"
+        android:text="I Agree "
+        android:textAllCaps="true"
+        android:textColor="#9F51F8"
+        android:textSize="16sp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>
